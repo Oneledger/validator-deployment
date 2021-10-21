@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  olfullnode:
+      container_name: mainnet
+      build: .
+      ports:
+        - "26606:26606"
+      volumes:
+        - ./bin:/usr/local/go/bin
+        - ./oldata:/home/node/data
+      command: >
+        sh -c "sh /usr/local/go/bin/fullnodestartup.sh"             
+      stdin_open: true
+      tty: true
