@@ -1,11 +1,11 @@
-# fullnode #
+# Fullnode #
 
 ### Requirements ###
 
 * [docker](https://docs.docker.com/engine/install/)
 * [docker-compose](https://docs.docker.com/compose/install/)
 
-### fullnode setup through docker-compose ###
+### Fullnode setup through docker-compose ###
 
 1) clone the repo: https://github.com/Oneledger/fullnode.git
 
