@@ -25,6 +25,7 @@ ENV GO111MODULE on
 
 #Create Directories
 RUN mkdir -p -- $GOPATH $OLDATA
+WORKDIR /home/node/data
 
 #Install dependencies for cleveldb
 RUN cd /usr/local && wget https://github.com/google/leveldb/archive/v1.20.tar.gz && \
