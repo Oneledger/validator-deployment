@@ -35,9 +35,9 @@ cd oldata
 sudo docker-compose exec olfullnode sh -c "olclient validatorset"
 ```
 
-- Go to [Mainnet explorer](https://mainnet-explorer.oneledger.network/), check out the current block height
+- Go to [Mainnet explorer](https://mainnet-explorer.oneledger.network/), check out the current block height (For Mainnet)
 
-- Go to [Testnet explorer](https://frankenstein-explorer.oneledger.network/), check out the current block height
+- Go to [Testnet explorer](https://frankenstein-explorer.oneledger.network/), check out the current block height (For Testnet)
 
 The node will take some time to catch up to Mainnet current height, wait until two heights are same or with only 1~2 block difference
 
@@ -67,7 +67,7 @@ sudo docker-compose exec olfullnode sh -c "olclient list"
 sudo docker-compose exec olfullnode sh -c "olclient send --party "your address without 0lt prefix" --counterparty "address you want to send token to without 0lt prefix" --amount "500000" --fee 0.00000001 --currency OLT --password "your password""
 ```
 
-5) To become validator you need to stake 0.5 Million OLT
+5) To become validator you need to stake atleast 0.5 Million OLT
 
 ```
 sudo docker-compose exec olfullnode sh -c "olclient delegation stake --amount 500000 --address YourStakingAccountWithout0ltPrefix --password YourPassword
