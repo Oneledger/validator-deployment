@@ -1,4 +1,4 @@
-# Fullnode #
+# Validator-Deployment #
 
 ### Requirements ###
 
