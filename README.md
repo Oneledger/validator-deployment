@@ -7,7 +7,7 @@
 
 ### Fullnode setup through docker-compose ###
 
-1) clone the repo: https://github.com/Oneledger/fullnode.git
+1) clone the repo: https://github.com/Oneledger/validator-deployment.git
 
 2) Go to directory where you want to run fullnode either testnet/mainnet
 
