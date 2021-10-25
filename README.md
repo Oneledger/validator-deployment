@@ -43,7 +43,7 @@ The node will take some time to catch up to Mainnet current height, wait until t
 
 ### Validator setup ###
 
-1) Have a Mainnet fullnode running (Please follow above steps to setup fullnode through docker-compose)
+1) Have a Mainnet fullnode running (Currently only mainnet supports validator setup, Please follow above steps to setup mainnet fullnode through docker-compose)
 
 2) Create an account in the secure wallet
 
