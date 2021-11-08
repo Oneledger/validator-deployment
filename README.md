@@ -94,3 +94,24 @@ sudo docker-compose exec olfullnode sh -c "olclient delegation status --address 
 ```
 
 - When we unstake, there is a period of time referred to as “maturity time”. One can only withdraw the unstaked amount after this maturity time, since the unstake transaction. This maturity time is 80000 blocks, roughly two weeks.
+
+### Rewards ###
+
+1) To Check reward information for a specific validator
+
+```
+sudo docker-compose exec olfullnode sh -c 'olclient call query.GetTotalRewardsForValidator {\"validator\":\"REPLACE_YOUR_ADDRESS_HERE_WITHOUT_0lt_PREFIX\"}'
+```
+
+2) Once you see no-zero "matureBalance" in above reward information, you are able to withdraw rewards
+
+```
+sudo docker-compose exec olfullnode sh -c 'olclient rewards withdraw --amount XXX --address REPLACE_YOUR_STAKEADDRESS_HERE_WITHOUT_0lt_PREFIX'
+```
+Please enter your password
+
+3) After you withdraw rewards check the increased balance in validator stake address
+
+```
+sudo docker-compose exec olfullnode sh -c 'olclient balance --address REPLACE_YOUR_STAKEADDRESS_HERE_WITHOUT_0lt_PREFIX'
+```
