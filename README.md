@@ -48,8 +48,9 @@ The node will take some time to catch up to Mainnet current height, wait until t
 2) Create an account in the secure wallet
 
 ```
-sudo docker-compose exec olfullnode sh -c "olclient account add --name "your preferred name for memorisation" --password "your password""
+sudo docker-compose exec olfullnode sh -c "olclient account add --name your_preferred_name_for_memorisation"
 ```
+(Note: It will prompt for password please enter)
 
 3) Run this command to get your node secure wallet stake address
 
@@ -64,33 +65,31 @@ sudo docker-compose exec olfullnode sh -c "olclient list"
 - Or you can use this below command, if the account you are sending from is in another node's secure wallet
 
 ```
-sudo docker-compose exec olfullnode sh -c "olclient send --party "your address without 0lt prefix" --counterparty "address you want to send token to without 0lt prefix" --amount "500000" --fee 0.00000001 --currency OLT --password "your password""
+sudo docker-compose exec olfullnode sh -c "olclient send --party YOUR_ADDRESS_WITHOUT_0lt_PREFIX --counterparty ADDRESS_YOU_WANT_TO_SEND_TOKEN_TO_WITHOUT_0lt_PREFIX --amount 500000 --fee 0.00000001 --currency OLT"
 ```
 
 5) To become validator you need to stake atleast 0.5 Million OLT
 
 ```
-sudo docker-compose exec olfullnode sh -c "olclient delegation stake --amount 500000 --address YourStakingAccountWithout0ltPrefix --password YourPassword
-"
+sudo docker-compose exec olfullnode sh -c "olclient delegation stake --amount 500000 --address YOUR_STAKINGACCOUNT_WITHOUT_0lt_PREFIX"
 ```
 
 6) Now you become validator, check the status
 
 ```
-sudo docker-compose exec olfullnode sh -c "olclient delegation status --address YourStakingAccountWithout0ltPrefix"
+sudo docker-compose exec olfullnode sh -c "olclient delegation status --address YOUR_STAKINGACCOUNT_WITHOUT_0lt_PREFIX"
 ```
 
 7) To unstake your OLT (Note: If you unstake total 0.5 Million or less you will no longer be a validator)
 
 ```
-sudo docker-compose exec olfullnode sh -c "olclient delegation unstake --amount 500000 --address YourStakingAccountWithout0ltPrefix --password YourPassword
-"
+sudo docker-compose exec olfullnode sh -c "olclient delegation unstake --amount 500000 --address YOUR_STAKINGACCOUNT_WITHOUT_0lt_PREFIX"
 ```
 
 8) After unstake check your status
 
 ```
-sudo docker-compose exec olfullnode sh -c "olclient delegation status --address YourStakingAccountWithout0ltPrefix"
+sudo docker-compose exec olfullnode sh -c "olclient delegation status --address YOUR_STAKINGACCOUNT_WITHOUT_0lt_PREFIX"
 ```
 
 - When we unstake, there is a period of time referred to as “maturity time”. One can only withdraw the unstaked amount after this maturity time, since the unstake transaction. This maturity time is 80000 blocks, roughly two weeks.
