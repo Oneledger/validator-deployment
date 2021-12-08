@@ -12,7 +12,7 @@
 2) Go to directory where you want to run fullnode either testnet/mainnet
 
 ```
-cd testnet or cd mainnet
+cd validator-deployment/testnet or validator-deployment/cd mainnet
 ```
 
 3) run docker-compose
