@@ -13,8 +13,6 @@
 
 ```
 cd testnet or cd mainnet
-
-mkdir oldata
 ```
 
 3) run docker-compose
