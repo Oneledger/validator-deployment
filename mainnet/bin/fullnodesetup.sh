@@ -2,8 +2,8 @@
       public_ip="$(curl ifconfig.me | awk '{$1=$1};1')" 
       internal_ip="$(hostname -I | awk '{$1=$1};1')"
       config_data_url=https://raw.githubusercontent.com/Oneledger/validator-deployment/main/mainnet/v0.18
-      olclient=https://github.com/Oneledger/protocol/releases/download/v0.18.11/olclient
-      olfullnode=https://github.com/Oneledger/protocol/releases/download/v0.18.11/olfullnode
+      olclient=https://github.com/Oneledger/protocol/releases/download/v0.18.12/olclient
+      olfullnode=https://github.com/Oneledger/protocol/releases/download/v0.18.12/olfullnode
       wget $olclient -O $GOROOT/bin/olclient && wget $olfullnode -O $GOROOT/bin/olfullnode && chmod +x $GOROOT/bin/*
       wget $config_data_url/genesis.json -O $OLDATA/genesis.json 
       $GOROOT/bin/olfullnode init --genesis $OLDATA/genesis.json --root $OLDATA
