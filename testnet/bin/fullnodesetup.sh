@@ -11,7 +11,7 @@
       ##Get Binaries
       binary_version=v0.18.11
       olclient=https://github.com/Oneledger/protocol/releases/download/$binary_version/olclient
-      olfullnode=https://github.com/Oneledger/protocol/releases/download/$binary_versio/olfullnode
+      olfullnode=https://github.com/Oneledger/protocol/releases/download/$binary_version/olfullnode
       
       ##fullnode init
       wget $olclient -O $GOROOT/bin/olclient && wget $olfullnode -O $GOROOT/bin/olfullnode && chmod +x $GOROOT/bin/*
