@@ -68,11 +68,11 @@
 
 [p2p]
   # List of seed nodes to connect to
-  seeds = ["ec19083476b5b24c4e1ef5ac7cb49da19f4b4fd8@34.66.98.152:38605"]
+  seeds = ["ec19083476b5b24c4e1ef5ac7cb49da19f4b4fd8@seed.oneledger.network:38605"]
   # Enables seed mode, which will make the node crawl the network looking for peers
   seed_mode = false
   # List of peers to maintain a persistent connection to
-  persistent_peers = ["42c5fdb66d9ec8a2613e2a929a3a36303052f3b6@34.72.19.228:38605","f0fa1f685f9a6251e6b81f0c1342b75990c6b3de@35.188.118.187:38605","fd13d348ad4e60ad4f68ae19321fc4962b2657c4@35.224.178.225:38605","994c2fd23ef17eda29e9b6f4ab72b0c1a7c3215c@35.192.103.64:38605"]
+  persistent_peers = ["42c5fdb66d9ec8a2613e2a929a3a36303052f3b6@sentry-1.oneledger.network:38605","f0fa1f685f9a6251e6b81f0c1342b75990c6b3de@sentry-2.oneledger.network:38605","fd13d348ad4e60ad4f68ae19321fc4962b2657c4@sentry-3.oneledger.network:38605","994c2fd23ef17eda29e9b6f4ab72b0c1a7c3215c@sentry-4.oneledger.network:38605"]
   # Enable UPNP port forwarding
   upnp = false
   # Set true for strict address routability rules. If true, the node will fail to start if the given P2P address isn't routable'
